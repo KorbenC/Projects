@@ -1,6 +1,11 @@
+"""
+Sorting - Implement five types of sorting algorithms: 
+Merge sort, bubble sort, insertion sort, selection sort, and quick sort
+"""
+
 #!/usr/bin/env python
-import random
- 
+import random, sys
+
 #Merge Sort Worst Case: O(n*Log(n))
 def merge(left, right):
     result = []
@@ -91,5 +96,7 @@ def main():
         
         print "Quick Sorted"
         print quickSort(list)
- 
-main()
+
+if __name__ == '__main__':
+        status = main()
+        sys.exit(status)
